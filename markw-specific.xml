@@ -8,4 +8,13 @@
   <!-- CAF Android ANT Legacy Compatibility Library (repo for FM-Radio and probably many other things) -->
   <project path="external/ant-wireless/antradio-library" name="LineageOS/android_external_ant-wireless_antradio-library" remote="github"
  revision="lineage-15.1" />
+
+  <!--  Bugless set of CAF HALs repos from GZOSP GitHub Org -->
+  <!-- GZOSP remote -->
+  <remote  name="gzosp"
+           fetch="https://github.com/GZOSP" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="hardware_qcom_audio" groups="qcom,qcom_audio" remote="gzosp" revision="8.1-caf-8996" /> 
+  <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="gzosp" revision="8.1-caf-8996" />
+  <project path="hardware/qcom/media-caf/msm8996" name="hardware_qcom_media" groups="qcom" remote="gzosp" revision="8.1-caf-8996" />
+
 </manifest>
