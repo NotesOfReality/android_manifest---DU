@@ -46,5 +46,6 @@
   <project path="system/bt" name="android_system_bt---DU" remote="nor" revision="o8x-caf" />
   <project path="system/core" name="android_system_core---DU" remote="nor" revision="o8x-caf_experimental_fine_update" />
   <project path="system/hwservicemanager" name="android_system_hwservicemanager---DU"  remote="nor" revision="o8x" />
+  <project path="system/libhidl" name="android_system_libhidl---DU" remote="nor" revision="o8x-caf" />
 
 </manifest>
