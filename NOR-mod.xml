@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="manifest" name="android_manifest---DU" remote="nor" revision="o8x-caf_NOR-mod" />
+  
+  <!-- The "android_build" and "android_vendor_du" repos are needed to actually enable treble in DirtyUnicorns Oreo 8.1 , they obviously replace two already existing ones. -->
+
+  <!-- General -->
+  <project path="bionic" name="android_bionic---DU" remote="nor" revision="o8x-caf_Test-Gradual" />
+  <project path="build/make" name="android_build---DU" remote="nor" revision="o8x_Treble_Test" >
+		<copyfile src="core/root.mk" dest="Makefile" />
+		<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+		<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+		<linkfile src="core" dest="build/core" />
+		<linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+		<linkfile src="target" dest="build/target" />
+		<linkfile src="tools" dest="build/tools" />
+	</project>
+  <project path="build/soong" name="android_build_soong---DU" remote="nor" revision="o8x">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+
+	<project path="vendor/du" name="android_vendor_du" remote="nor" revision="o8x_Treble" > 
+		<linkfile src="scripts/merge-aosp.sh" dest="merge-aosp.sh" />
+	</project>
+
+  <!-- "platform_external_libnetfilter_conntrack" repo which doesn't give any clang-related error -->
+  <remove-project name="platform/external/libnetfilter_conntrack" />
+  <project path="external/libnetfilter_conntrack" name="platform_external_libnetfilter_conntrack" remote="nor" revision="DU-O___o8x" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="android_frameworks_base---DU"  remote="nor" revision="o8x_mod" />
+  <project path="frameworks/native" name="android_frameworks_native---DU"  remote="nor" revision="o8x_mod" />
+  
+  <!-- Hardware Interfaces repo with many many updates from MiracleDROID -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="nor" revision="DU-O___o8x" />
+
+  <!-- Packages -->
+  <!-- Modified "Settings" app for "XiaomiParts" implementation -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nor" revision="DU-O___o8x_Test" />
+  <!-- Modified "DU Tweaks" app for Signature Spoofing implementation and other stuff -->
+  <project path="packages/apps/DU-Tweaks" name="android_packages_apps_DU-Tweaks" remote="nor" revision="o8x_mod" />
+
+  <!-- System -->
+  <project path="system/bt" name="android_system_bt---DU" remote="nor" revision="o8x-caf" />
+  <project path="system/core" name="android_system_core---DU" remote="nor" revision="o8x-caf_experimental_fine_update" />
+  <project path="system/hwservicemanager" name="android_system_hwservicemanager---DU"  remote="nor" revision="o8x" />
+
+</manifest>
