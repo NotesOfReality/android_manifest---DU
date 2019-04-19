@@ -138,5 +138,14 @@
   <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="du" revision="o8x-caf" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="du" revision="o8x-caf" />
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="du" revision="o8x-caf" />
+  
+  
+  <!-- NOR-mod additional repos -->
+  
+ <!-- Android Oreo 8.1 branch of Favorite Prebuilt Apps Repo by NotesOfReality-->
+ <project path="packages/apps/FavoritePrebuiltApps" name="NotesOfReality/Favorite__Prebuilt-Apps" remote="github" revision="Oreo-8.1" />
 
+ <!-- Another Cross-Compiler Toolchain from KrasCGQ which really should be bleeding edge -->
+ <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-opt-linaro-7.x" name="krasCGQ/aarch64-linux-android" remote="github" revision="opt-linaro-7.x" />
+<!-- Remember to check the "KERNEL_TOOLCHAIN" and the "TARGET_KERNEL_CROSS_COMPILE_PREFIX" parameters in the "BoardConfig.mk" file of your DT -->
 </manifest>
