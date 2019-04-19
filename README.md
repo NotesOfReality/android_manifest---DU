@@ -4,6 +4,18 @@
 ## Setup your build environment & Sync our source ##
 To setup your build enivornment and sync DU, please follow this guide: [Link](https://raw.githubusercontent.com/nathanchance/Android-Tools/master/Guides/Building_AOSP.txt)
 
+## If you prefer to just init this manifest repo, sync the source and build
+```
+repo init -u https://github.com/NotesOfReality/android_manifest---DU.git -b o8x-caf_NOR-mod
+repo sync --no-tags --no-clone-bundle -j<X> --force-sync
+source build/envsetup.sh && lunch <your device number> && time mka bacon -j<x> 2>&1 | tee <whatever-name>.log
+```
+**Small Explanation of the** *variables* **in the commands above**
+* ```X``` is a value which depends on your internet connection speed, ```X```= 4 or 8 for slow connections, ```X```=16 or 32 for fastest connections)
+* check ```<your device number>``` before running the latest command by just running ```source build/envsetup.sh && lunch``` 
+* ```x``` is the ```nproc --all``` command output
+* ```2>&1 | tee <whatever-name>.log``` logs all the building process, which is *always* useful
+
 ## Submitting Patches ##
 Dirty Unicorns is a open source project and welcomes new contributors.
 
