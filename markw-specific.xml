@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Markw-specific Trees -->
+ <project path="device/xiaomi/markw" name="android_device_xiaomi_markw" remote="nor" revision="DU-O___o8x-caf___Experimental" />
+ <project path="kernel/xiaomi/msm8953" name="freemarkw/android_kernel_xiaomi_msm8953" remote="github" revision="Nosgoth" /> 
+ <project path="vendor/xiaomi" name="freemarkw/android_vendor_xiaomi" remote="github" revision="AOSP" />
+ 
+  <!-- CAF Android ANT Legacy Compatibility Library (repo for FM-Radio and probably many other things) -->
+  <project path="external/ant-wireless/antradio-library" name="LineageOS/android_external_ant-wireless_antradio-library" remote="github"
+ revision="lineage-15.1" />
+</manifest>

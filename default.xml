@@ -632,4 +632,7 @@
   <!-- Add all tracked NOR-mod repos -->
   <include name="NOR-mod.xml" />
 
+  <!-- Add all tracked Xiaomi Redmi 4 Pro/Prime(markw)-specific repos -->
+  <include name="markw-specific.xml" />
+  
 </manifest>
