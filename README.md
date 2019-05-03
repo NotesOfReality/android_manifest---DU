@@ -8,13 +8,14 @@ To setup your build enivornment and sync DU, please follow this guide: [Link](ht
 ```
 repo init -u https://github.com/NotesOfReality/android_manifest---DU.git -b o8x-caf_NOR-mod
 repo sync --no-tags --no-clone-bundle -j<X> --force-sync
-source build/envsetup.sh && lunch <your device number> && time mka bacon -j<x> 2>&1 | tee <whatever-name>.log
+source build/envsetup.sh && lunch <your device number> && time mka bacon -j<x> 2>&1 | tee <whatever-name>_$(date '+%Y%m%d_%H-%M-%S').log
 ```
 **Small Explanation of the** *variables* **in the commands above**
 * ```X``` is a value which depends on your internet connection speed, ```X```= 4 or 8 for slow connections, ```X```=16 or 32 for fastest connections)
 * check ```<your device number>``` before running the latest command by just running ```source build/envsetup.sh && lunch``` 
 * ```x``` is the ```nproc --all``` command output
 * ```2>&1 | tee <whatever-name>.log``` logs all the building process, which is *always* useful
+* ```_$(date '+%Y%m%d_%H-%M-%S')``` is the date and the time(hour-minute-second) when you start the building process
 
 ## Submitting Patches ##
 Dirty Unicorns is a open source project and welcomes new contributors.
