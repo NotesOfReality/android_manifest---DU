@@ -42,6 +42,7 @@
   <project path="packages/apps/Contacts" name="android_packages_apps_Contacts---DU" remote="nor" revision="o8x" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller---DU" remote="nor" revision="o8x" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm---DU" remote="nor" revision="o8x-caf" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony---DU" remote="nor" revision="o8x-caf" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nor" revision="DU-O___o8x_Test" />
   <project path="packages/apps/DU-Tweaks" name="android_packages_apps_DU-Tweaks" remote="nor" revision="o8x_mod" />
 
