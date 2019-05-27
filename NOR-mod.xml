@@ -29,6 +29,9 @@
   <remove-project name="platform/external/libnetfilter_conntrack" />
   <project path="external/libnetfilter_conntrack" name="platform_external_libnetfilter_conntrack" remote="nor" revision="DU-O___o8x" />
 
+  <!-- device -->
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy---DU" remote="nor" revision="o8x-caf" />
+
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av---DU" remote="nor" revision="o8x-caf" />
   <project path="frameworks/base" name="android_frameworks_base---DU"  remote="nor" revision="o8x_mod" />
@@ -53,6 +56,7 @@
   <project path="system/hwservicemanager" name="android_system_hwservicemanager---DU"  remote="nor" revision="o8x" />
   <project path="system/libhidl" name="android_system_libhidl---DU" remote="nor" revision="o8x-caf" />
   <project path="system/nfc" name="android_system_nfc---DU" remote="nor" revision="o8x" />
+  <project path="system/sepolicy" name="android_system_sepolicy---DU" remote="nor" revision="o8x" />
   <project path="system/vold" name="android_system_vold---DU" remote="nor" revision="o8x-caf" />
 
 </manifest>

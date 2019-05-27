@@ -39,9 +39,6 @@
   <project path="external/selinux" name="android_external_selinux" remote="du" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="du" revision="o8x-caf" />
 
-  <!-- device -->
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="du" revision="o8x-caf" />
-
   <!-- frameworks -->
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="du" revision="o8x-caf" />
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="du" revision="o8x-caf" />
@@ -90,7 +87,6 @@
 
   <!-- system -->
   <project path="system/extras" name="android_system_extras" remote="du" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="du" />
 
   <!-- prebuilts -->
   <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" remote="du" />
