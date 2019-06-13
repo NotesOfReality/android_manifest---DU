@@ -32,6 +32,9 @@
   <!-- device -->
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy---DU" remote="nor" revision="o8x-caf" />
 
+  <!-- External -->
+  <project path="external/chromium-webview" name="MiracleDROID/android_external_chromium-webview" remote="github" revision="android-8.1" />
+ 
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av---DU" remote="nor" revision="o8x-caf" />
   <project path="frameworks/base" name="android_frameworks_base---DU"  remote="nor" revision="o8x_mod" />
