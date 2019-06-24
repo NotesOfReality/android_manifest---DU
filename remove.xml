@@ -68,6 +68,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="kernel/tests" />
+  <remove-project name="platform/libcore" />
 
   <!-- Hardware repos -->
   <remove-project name="platform/hardware/interfaces" />

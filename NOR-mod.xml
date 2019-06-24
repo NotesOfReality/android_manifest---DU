@@ -19,6 +19,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="libcore" name="android_libcore---DU" remote="nor" revision="o8x" />
 
 
 	<project path="vendor/du" name="android_vendor_du" remote="nor" revision="o8x_Treble" > 
