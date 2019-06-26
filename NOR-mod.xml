@@ -61,6 +61,7 @@
   <project path="system/libhidl" name="android_system_libhidl---DU" remote="nor" revision="o8x-caf" />
   <project path="system/nfc" name="android_system_nfc---DU" remote="nor" revision="o8x" />
   <project path="system/sepolicy" name="android_system_sepolicy---DU" remote="nor" revision="o8x" />
+  <project path="device/du/sepolicy" name="android_device_du_sepolicy" remote="nor" revision="o8x" />
   <project path="system/vold" name="android_system_vold---DU" remote="nor" revision="o8x-caf" />
 
 </manifest>
